@@ -14,6 +14,8 @@
 		889581731B2554DD000431F7 /* facebook_photoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889581721B2554DD000431F7 /* facebook_photoTests.swift */; };
 		8895817D1B255529000431F7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895817C1B255529000431F7 /* FeedViewController.swift */; };
 		8895817F1B255535000431F7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895817E1B255535000431F7 /* PhotoViewController.swift */; };
+		889581821B255C83000431F7 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889581801B255C83000431F7 /* BaseTransition.swift */; };
+		889581831B255C83000431F7 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889581811B255C83000431F7 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		889581721B2554DD000431F7 /* facebook_photoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebook_photoTests.swift; sourceTree = "<group>"; };
 		8895817C1B255529000431F7 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8895817E1B255535000431F7 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		889581801B255C83000431F7 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = ../../TransitionDemo/TransitionDemo/BaseTransition.swift; sourceTree = "<group>"; };
+		889581811B255C83000431F7 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = ../../TransitionDemo/TransitionDemo/FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		889581591B2554DD000431F7 /* facebook-photo */ = {
 			isa = PBXGroup;
 			children = (
+				889581841B255C8B000431F7 /* Transitions */,
 				8895815C1B2554DD000431F7 /* AppDelegate.swift */,
 				889581601B2554DD000431F7 /* Main.storyboard */,
 				889581631B2554DD000431F7 /* Images.xcassets */,
@@ -113,6 +118,15 @@
 				889581711B2554DD000431F7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		889581841B255C8B000431F7 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				889581801B255C83000431F7 /* BaseTransition.swift */,
+				889581811B255C83000431F7 /* FadeTransition.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8895817D1B255529000431F7 /* FeedViewController.swift in Sources */,
+				889581831B255C83000431F7 /* FadeTransition.swift in Sources */,
+				889581821B255C83000431F7 /* BaseTransition.swift in Sources */,
 				8895815D1B2554DD000431F7 /* AppDelegate.swift in Sources */,
 				8895817F1B255535000431F7 /* PhotoViewController.swift in Sources */,
 			);
