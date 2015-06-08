@@ -10,10 +10,14 @@ import UIKit
 
 class PhotoViewController: UIViewController {
 
+    var photo: UIImage!
+    
+    @IBOutlet weak var photoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        photoImageView.image = photo
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +25,11 @@ class PhotoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onDoneTap(sender: UITapGestureRecognizer) {
+        dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+    }
 
     /*
     // MARK: - Navigation
